@@ -1,0 +1,19 @@
+<ion-view title="음악가">
+  <ion-nav-buttons side="left">
+    <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons>
+  <ion-content has-header="true" padding="true" overflow-scroll="true">
+    <div blink></div>
+    <div class="list card" ng-repeat="musician in musicians">
+      <div class="item item-avatar">
+        <img ng-src="{{ musician.image }}" />
+        <h2>{{ musician.name }}</h2>
+        <p>{{ musician.genre }}</p>
+      </div>
+      <div class="item item-body">
+        <p>출생: {{ musician.birth }}년</p>
+        <p ng-show="musician.death">사망: {{ musician.death }}년</p>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

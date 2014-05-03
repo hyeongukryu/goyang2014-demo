@@ -1,0 +1,30 @@
+<ion-side-menus>
+  <ion-pane ion-side-menu-content>
+    <ion-nav-bar class="bar-stable nav-title-slide-ios7">
+      <ion-nav-back-button class="button-clear"><i class="icon ion-chevron-left"></i> 뒤로</ion-nav-back-button>
+    </ion-nav-bar>
+    <ion-nav-view name="content" animation="slide-left-right"></ion-nav-view>
+  </ion-pane>
+
+  <ion-side-menu side="left">
+    <header class="bar bar-header bar-stable">
+      <h1 class="title">왼쪽 메뉴</h1>
+    </header>
+    <ion-content class="has-header">
+      <ion-list>
+        <ion-item nav-clear menu-close href="#/home">
+          홈
+        </ion-item>
+        <ion-item nav-clear menu-close href="#/elements">
+          원소 목록
+        </ion-item>
+        <ion-item nav-clear menu-close href="#/musicians">
+          음악가
+        </ion-item>
+        <ion-item nav-clear menu-close href="#/info">
+          애플리케이션 정보
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-side-menu>
+</ion-side-menus>

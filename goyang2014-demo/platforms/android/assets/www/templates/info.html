@@ -1,0 +1,14 @@
+<ion-view title="애플리케이션 정보">
+  <ion-nav-buttons side="left">
+    <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons>
+  <ion-content has-header="true" padding="true" overflow-scroll="true">
+    <div blink></div>
+    <div class="list">
+      <div class="item" ng-repeat="author in authors">
+        <p>{{ author.name }}</p>
+        <p>{{ author.address }}</p>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>
